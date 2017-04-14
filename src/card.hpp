@@ -1,7 +1,9 @@
-#include <string>
+enum Number {Ace = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
+    Jack, Queen, King};
+enum Suit {Clubs, Hearts, Diamonds, Spades};
 
 struct Card
 {
-    int m_number;
-    std::string m_suit;
+    Number m_number;
+    Suit m_suit;
 };
