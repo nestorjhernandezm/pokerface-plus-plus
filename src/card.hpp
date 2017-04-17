@@ -1,9 +1,9 @@
-enum Number {Ace = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
-    Jack, Queen, King};
-enum Suit {Clubs, Hearts, Diamonds, Spades};
+enum class Rank : std::uint8_t {Ace = 1, Two, Three, Four, Five, Six, Seven,
+    Eight, Nine, Ten, Jack, Queen, King};
+enum class Suit : std::uint8_t {Clubs, Hearts, Diamonds, Spades};
 
 struct Card
 {
-    Number m_number;
+    Rank m_rank;
     Suit m_suit;
 };
