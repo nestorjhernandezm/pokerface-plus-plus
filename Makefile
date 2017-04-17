@@ -23,3 +23,8 @@ $(OUTPUTFOLDER):
 
 clean:
 	$(RM) $(OUTPUTFOLDER)
+
+build: clean all
+
+run: build
+	$(OUTPUTFOLDER)/main
