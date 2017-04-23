@@ -1,9 +1,19 @@
-enum class Rank : std::uint8_t {Ace = 1, Two, Three, Four, Five, Six, Seven,
-    Eight, Nine, Ten, Jack, Queen, King};
-enum class Suit : std::uint8_t {Clubs, Hearts, Diamonds, Spades};
+#ifndef CARD_H
+#define CARD_H
 
-struct Card
+enum class Rank : unsigned int {Ace = 1, Two, Three, Four, Five, Six, Seven,
+    Eight, Nine, Ten, Jack, Queen, King};
+enum class Suit {Clubs, Hearts, Diamonds, Spades};
+
+class Card
 {
-    Rank m_rank;
-    Suit m_suit;
+    public:
+        Card();
+        Card(Rank, Suit);
+
+    private:
+        Rank m_rank;
+        Suit m_suit;
 };
+
+#endif /* CARD_H */

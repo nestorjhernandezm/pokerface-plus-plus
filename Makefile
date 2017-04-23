@@ -6,7 +6,7 @@ CXXFLAGS := -g -Wall -Wextra -std=c++11
 COMMAND := $(CXX) $(CXXFLAGS) -o
 
 INPUTFOLDER := ./src
-SOURCES := $(wildcard $(INPUTFOLDER)/*.cpp)
+SOURCES := $(wildcard $(INPUTFOLDER)/main.cpp)
 OUTPUTFOLDER := ./bin
 
 RM := rm -rf
