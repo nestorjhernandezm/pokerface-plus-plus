@@ -10,8 +10,8 @@ class Card
     public:
         Card();
         Card(Rank, Suit);
-        Rank get_rank();
-        Suit get_suit();
+        Rank get_rank() const;
+        Suit get_suit() const;
 
     private:
         Rank m_rank;
