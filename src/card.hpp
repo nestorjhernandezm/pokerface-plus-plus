@@ -10,6 +10,8 @@ class Card
     public:
         Card();
         Card(Rank, Suit);
+        Rank get_rank();
+        Suit get_suit();
 
     private:
         Rank m_rank;
