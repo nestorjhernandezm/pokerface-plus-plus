@@ -1,5 +1,4 @@
-#ifndef CARD_H
-#define CARD_H
+#pragma once
 
 enum class Rank : unsigned int {Ace = 1, Two, Three, Four, Five, Six, Seven,
     Eight, Nine, Ten, Jack, Queen, King};
@@ -17,5 +16,3 @@ class Card
         Rank m_rank;
         Suit m_suit;
 };
-
-#endif /* CARD_H */
