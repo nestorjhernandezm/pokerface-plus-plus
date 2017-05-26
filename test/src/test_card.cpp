@@ -1,4 +1,4 @@
-#include "card.hpp"
+#include "../../src/card.hpp"
 
 #include <gtest/gtest.h>
 
