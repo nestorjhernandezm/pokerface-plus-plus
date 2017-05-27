@@ -12,7 +12,9 @@ INCLUDES := -I./ -I/usr/include
 INPUTFOLDER := ./src
 TESTFOLDER := ./test
 SOURCES := $(wildcard $(INPUTFOLDER)/*.cpp)
-TESTSOURCES := $(wildcard $(TESTFOLDER)/*.cpp)
+# TESTSOURCES := $(wildcard $(TESTFOLDER)/*.cpp)
+# TESTSOURCES := $(shell find src/ -name "main.cpp", $(TESTSOURCES))
+TESTSOURCES := ./src/card.cpp ./src/card.hpp ./test/pokerface_plus_plus_tests.cpp
 OUTPUTFOLDER := ./bin
 
 RM := rm -rf
