@@ -2,7 +2,7 @@
 # the extension
 
 CXX := g++
-CXXFLAGS := -g -std=c++11
+CXXFLAGS := -g -Wall -Wextra -std=c++11
 
 GTESTFOLDER := /usr/lib
 LIBS := -L$(GTESTFOLDER) -lpthread -lgtest -lgtest_main
