@@ -1,7 +1,8 @@
 #pragma once
 
-#include <vector>
 #include <card.hpp>
+
+#include <vector>
 
 class Deck
 {
@@ -9,6 +10,7 @@ class Deck
         Deck();
         void shuffle();
         Card draw();
+        int size();
 
     private:
         std::vector<Card> m_cards;
