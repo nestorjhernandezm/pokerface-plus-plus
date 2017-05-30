@@ -53,6 +53,18 @@ TEST(DeckTest, ShuffleDeck)
     EXPECT_EQ(shuffled_deck, true);
 }
 
+TEST(DeckTest, DrawCard)
+{
+    Deck deck;
+    int original_size = deck.size();
+    deck.draw();
+
+    int size_after_draw = deck.size();
+
+    EXPECT_EQ(original_size, size_after_draw + 1);
+}
+
+
 TEST(DeckTest, DeckSize)
 {
     Deck deck;
