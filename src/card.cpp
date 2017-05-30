@@ -17,3 +17,8 @@ Suit Card::suit() const
 {
     return m_suit;
 }
+
+bool Card::operator==(const Card& c)
+{
+    return m_rank == c.rank() && m_suit == c.suit();
+}

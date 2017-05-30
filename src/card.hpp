@@ -21,6 +21,7 @@ class Card
         Card(Rank, Suit);
         Rank rank() const;
         Suit suit() const;
+        bool operator==(const Card& c);
 
     private:
         Rank m_rank;

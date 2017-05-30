@@ -29,6 +29,29 @@ TEST(DeckTest, CreateDeck)
     EXPECT_EQ(good_deck, true);
 }
 
+TEST(DeckTest, ShuffleDeck)
+{
+    Deck deck;
+    deck.shuffle();
+
+    Deck new_deck;
+
+    bool shuffled_deck = false;
+
+    for (int i = 0; i < deck.size(); ++i)
+    {
+        Card from_shuffled = deck.draw();
+        Card from_new = new_deck.draw();
+
+        if (!(from_shuffled == from_new))
+        {
+            shuffled_deck = true;
+            break;
+        }
+    }
+
+    EXPECT_EQ(shuffled_deck, true);
+}
 
 TEST(DeckTest, DeckSize)
 {
