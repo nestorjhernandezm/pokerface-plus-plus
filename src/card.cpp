@@ -22,3 +22,8 @@ bool Card::operator==(const Card& c)
 {
     return m_rank == c.rank() && m_suit == c.suit();
 }
+
+bool Card::operator!=(const Card& c)
+{
+    return !Card::operator==(c);
+}

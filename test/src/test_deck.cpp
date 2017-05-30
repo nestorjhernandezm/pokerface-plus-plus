@@ -43,7 +43,7 @@ TEST(DeckTest, ShuffleDeck)
         Card from_shuffled = deck.draw();
         Card from_new = new_deck.draw();
 
-        if (!(from_shuffled == from_new))
+        if (from_shuffled != from_new)
         {
             shuffled_deck = true;
             break;
